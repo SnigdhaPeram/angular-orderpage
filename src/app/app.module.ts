@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 
 import {LineItemComponent} from './line-item/line-item.component';
 import { OrderComponent } from './order/order.component';
-import { OrderService } from './core/order.service';
+import { OrderService } from './core';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent,  LineItemComponent, OrderComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [OrderService]
+  providers: [ OrderService ]
 })
 export class AppModule { }
